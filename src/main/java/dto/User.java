@@ -23,14 +23,14 @@ public class User {
     private User() {
     }
 
-    public User register(String login, String password) {
+    public static User register(String login, String password) {
         if (OnlineMarket.isExistsUser(login)) return null;
         User user = new User(login);
         user.setPassword(password);
         return user;
     }
 
-    public User login(String login, String password) {
+    public static User login(String login, String password) {
         if (!OnlineMarket.isExistsUser(login)) return new User();
         User user = OnlineMarket.getUser(login);
         return BCrypt.checkpw(password,user.getPassword()) ? user : new User();

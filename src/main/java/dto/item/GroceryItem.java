@@ -12,7 +12,7 @@ public abstract class GroceryItem extends AbstractItem{
     @Getter
     private final Date expiration;
 
-    public GroceryItem(String name, double price, Catalog catalog, Date expiration) {
+    public GroceryItem(String name, Double price, Catalog catalog, Date expiration) {
         super(name, price, catalog);
         this.expiration = expiration;
     }

@@ -8,9 +8,9 @@ public interface Item {
 
     void setName(String name);
 
-    double getPrice();
+    Double getPrice();
 
-    void setPrice(double price);
+    void setPrice(Double price);
 
     Catalog getCatalog();
 

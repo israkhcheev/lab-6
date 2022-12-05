@@ -2,6 +2,7 @@ package dto.item.impl;
 
 import dto.Catalog;
 import dto.item.AbstractItem;
+import dto.item.Item;
 
 public class ChairItem extends AbstractItem {
 
@@ -13,5 +14,4 @@ public class ChairItem extends AbstractItem {
         this.material = material;
         this.style = style;
     }
-
 }
